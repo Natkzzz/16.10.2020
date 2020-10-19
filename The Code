@@ -1,0 +1,26 @@
+import random 
+pit = [int(random.random()*10000) for i in range(10000)] 
+qu = [] 
+count = 0 
+
+for i in pit: 
+if count % 2 == 1: 
+qu.append(i) 
+count += 1 
+len_first = len(qu) 
+print('len_first') 
+myu = [] 
+for num in pit: 
+if num % 2 == 0: 
+myu.append(num) 
+def ru(myu): 
+return myu[0] 
+print(ru(myu)) 
+s = int(input(myu)) 
+if s % 10 == 2: 
+print(s) 
+ 
+t = int(input(qu)) 
+if t % 10 == 2: 
+print(t) 
+ 
